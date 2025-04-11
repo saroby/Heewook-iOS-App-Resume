@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		713A6E7D2DA93660001652DC /* CocoaChain in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E7C2DA93660001652DC /* CocoaChain */; };
+		713A6E802DA93680001652DC /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E7F2DA93680001652DC /* FlexLayout */; };
+		713A6E832DA9368B001652DC /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E822DA9368B001652DC /* PinLayout */; };
+		713A6E862DA9388A001652DC /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E852DA9388A001652DC /* MarkdownView */; };
+		713A6E892DA938CE001652DC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E882DA938CE001652DC /* RxCocoa */; };
+		713A6E8B2DA938CE001652DC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E8A2DA938CE001652DC /* RxRelay */; };
+		713A6E8E2DA938E7001652DC /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E8D2DA938E7001652DC /* ReactorKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		713A6E2B2DA7D9EF001652DC /* Heewok iOS App Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heewok iOS App Resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713A6E8B2DA938CE001652DC /* RxRelay in Frameworks */,
+				713A6E832DA9368B001652DC /* PinLayout in Frameworks */,
+				713A6E8E2DA938E7001652DC /* ReactorKit in Frameworks */,
+				713A6E7D2DA93660001652DC /* CocoaChain in Frameworks */,
+				713A6E892DA938CE001652DC /* RxCocoa in Frameworks */,
+				713A6E862DA9388A001652DC /* MarkdownView in Frameworks */,
+				713A6E802DA93680001652DC /* FlexLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,13 @@
 			);
 			name = "Heewok iOS App Resume";
 			packageProductDependencies = (
+				713A6E7C2DA93660001652DC /* CocoaChain */,
+				713A6E7F2DA93680001652DC /* FlexLayout */,
+				713A6E822DA9368B001652DC /* PinLayout */,
+				713A6E852DA9388A001652DC /* MarkdownView */,
+				713A6E882DA938CE001652DC /* RxCocoa */,
+				713A6E8A2DA938CE001652DC /* RxRelay */,
+				713A6E8D2DA938E7001652DC /* ReactorKit */,
 			);
 			productName = "Heewok iOS App Resume";
 			productReference = 713A6E2B2DA7D9EF001652DC /* Heewok iOS App Resume.app */;
@@ -108,6 +132,14 @@
 			);
 			mainGroup = 713A6E222DA7D9EF001652DC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				713A6E7B2DA93660001652DC /* XCRemoteSwiftPackageReference "CocoaChain" */,
+				713A6E7E2DA93680001652DC /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				713A6E812DA9368B001652DC /* XCRemoteSwiftPackageReference "PinLayout" */,
+				713A6E842DA9388A001652DC /* XCRemoteSwiftPackageReference "MarkdownView" */,
+				713A6E872DA938CE001652DC /* XCRemoteSwiftPackageReference "RxSwift" */,
+				713A6E8C2DA938E7001652DC /* XCRemoteSwiftPackageReference "ReactorKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 713A6E2C2DA7D9EF001652DC /* Products */;
 			projectDirPath = "";
@@ -352,6 +384,95 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		713A6E7B2DA93660001652DC /* XCRemoteSwiftPackageReference "CocoaChain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/saroby/CocoaChain";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		713A6E7E2DA93680001652DC /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		713A6E812DA9368B001652DC /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+		713A6E842DA9388A001652DC /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/keitaoouchi/MarkdownView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+		713A6E872DA938CE001652DC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		713A6E8C2DA938E7001652DC /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		713A6E7C2DA93660001652DC /* CocoaChain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E7B2DA93660001652DC /* XCRemoteSwiftPackageReference "CocoaChain" */;
+			productName = CocoaChain;
+		};
+		713A6E7F2DA93680001652DC /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E7E2DA93680001652DC /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		713A6E822DA9368B001652DC /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E812DA9368B001652DC /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+		713A6E852DA9388A001652DC /* MarkdownView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E842DA9388A001652DC /* XCRemoteSwiftPackageReference "MarkdownView" */;
+			productName = MarkdownView;
+		};
+		713A6E882DA938CE001652DC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E872DA938CE001652DC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		713A6E8A2DA938CE001652DC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E872DA938CE001652DC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		713A6E8D2DA938E7001652DC /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6E8C2DA938E7001652DC /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 713A6E232DA7D9EF001652DC /* Project object */;
 }
