@@ -1,13 +1,13 @@
 {
-  "originHash" : "67714ed39022442582d328cb88e66d2f28aa76c8ea3c5c41373fcf6d7b8a0bc5",
+  "originHash" : "7999f0ccfb3cd26436bebe396ec4d9f3d55c06fe15ccfc450d51b373c5109977",
   "pins" : [
     {
       "identity" : "cocoachain",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/saroby/CocoaChain",
       "state" : {
-        "revision" : "b92d06716b0452fc2e8a63dca3393e3dcabf945d",
-        "version" : "1.2.0"
+        "branch" : "main",
+        "revision" : "a068967d0a9cef61f19ae3dd69bbea2e0b17cf2e"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/layoutBox/FlexLayout",
       "state" : {
-        "revision" : "68c784bea59e4ed905f16cc6c62d22afd34d68d9",
-        "version" : "2.2.0"
+        "branch" : "master",
+        "revision" : "f4537c014b906f4b27ad408a5125f3a759d41b0e"
       }
     },
     {
@@ -53,6 +53,15 @@
       "state" : {
         "revision" : "5dd1907d64f0d36f158f61a466bab75067224893",
         "version" : "6.9.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
       }
     },
     {

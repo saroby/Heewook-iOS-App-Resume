@@ -66,9 +66,9 @@ extension MenuViewController {
         // resume
         case aboutMe, skills, experience, projects, education, awards, philosophy
         // storyboard samples
-        case audioPlayer, youtubePlayer, shaders, todayHouse, karrot
+        case audioPlayer, youtubePlayer, shaders, todayHouse
         // swiftUI samples
-        case brickOutGameSwiftUI, appStoreSwiftUI
+        case brickOutGameSwiftUI, appStoreSwiftUI, karrotSwiftUI
         
         var title: String {
             switch self {
@@ -85,7 +85,7 @@ extension MenuViewController {
             case .brickOutGameSwiftUI: return "Brick Out Game (SwiftUI)"
             case .appStoreSwiftUI: return "App Store (SwiftUI)"
             case .todayHouse: return "Today House"
-            case .karrot: return "Karrot"
+            case .karrotSwiftUI: return "Karrot (SwiftUI)"
             }
         }
     }

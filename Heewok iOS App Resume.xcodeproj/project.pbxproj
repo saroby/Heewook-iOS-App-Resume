@@ -390,8 +390,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/saroby/CocoaChain";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		713A6E7E2DA93680001652DC /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
