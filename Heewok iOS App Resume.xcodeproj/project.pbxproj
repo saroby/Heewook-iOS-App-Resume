@@ -14,6 +14,7 @@
 		713A6E892DA938CE001652DC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E882DA938CE001652DC /* RxCocoa */; };
 		713A6E8B2DA938CE001652DC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E8A2DA938CE001652DC /* RxRelay */; };
 		713A6E8E2DA938E7001652DC /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6E8D2DA938E7001652DC /* ReactorKit */; };
+		713A6EBA2DABB3AB001652DC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 713A6EB92DABB3AB001652DC /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 				713A6E7D2DA93660001652DC /* CocoaChain in Frameworks */,
 				713A6E892DA938CE001652DC /* RxCocoa in Frameworks */,
 				713A6E862DA9388A001652DC /* MarkdownView in Frameworks */,
+				713A6EBA2DABB3AB001652DC /* ComposableArchitecture in Frameworks */,
 				713A6E802DA93680001652DC /* FlexLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +104,7 @@
 				713A6E882DA938CE001652DC /* RxCocoa */,
 				713A6E8A2DA938CE001652DC /* RxRelay */,
 				713A6E8D2DA938E7001652DC /* ReactorKit */,
+				713A6EB92DABB3AB001652DC /* ComposableArchitecture */,
 			);
 			productName = "Heewok iOS App Resume";
 			productReference = 713A6E2B2DA7D9EF001652DC /* Heewok iOS App Resume.app */;
@@ -139,6 +142,7 @@
 				713A6E842DA9388A001652DC /* XCRemoteSwiftPackageReference "MarkdownView" */,
 				713A6E872DA938CE001652DC /* XCRemoteSwiftPackageReference "RxSwift" */,
 				713A6E8C2DA938E7001652DC /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				713A6EB82DABB3AB001652DC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 713A6E2C2DA7D9EF001652DC /* Products */;
@@ -434,6 +438,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		713A6EB82DABB3AB001652DC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.19.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -471,6 +483,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 713A6E8C2DA938E7001652DC /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		713A6EB92DABB3AB001652DC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 713A6EB82DABB3AB001652DC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
