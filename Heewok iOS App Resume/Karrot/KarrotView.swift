@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct KarrotView: View {
     var body: some View {
         TabView {
             Tab {
@@ -34,10 +34,9 @@ struct ContentView: View {
                 Text("나의 당근")
             }
         }
-        
     }
 }
 
 #Preview {
-    ContentView()
+    KarrotView()
 }
