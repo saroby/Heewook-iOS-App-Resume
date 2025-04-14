@@ -1,4 +1,5 @@
 import SwiftUI
+import GenesicSwiftUI
 
 struct MyKarrotView: View {
     var body: some View {
@@ -9,12 +10,10 @@ struct MyKarrotView: View {
                         
                     } label: {
                         HStack {
-                            AsyncImage(url: nil)
-                                .size(40)
+                            UserCircleView(size: .medium, imageURL: nil)
                             Text("치킨치")
                             Text("44.3c")
                             Spacer()
-                            
                         }
                     }
                     
@@ -239,11 +238,4 @@ struct MyKarrotView: View {
 
 #Preview {
     MyKarrotView()
-}
-
-
-extension View {
-    func size(_ size: CGFloat) -> some View {
-        frame(width: size, height: size)
-    }
 }

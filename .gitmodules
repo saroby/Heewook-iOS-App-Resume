@@ -1,0 +1,3 @@
+[submodule "SPM/GenesicSwiftUI"]
+	path = SPM/GenesicSwiftUI
+	url = https://github.com/saroby/GenesicSwiftUI

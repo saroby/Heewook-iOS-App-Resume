@@ -1,4 +1,6 @@
 import SwiftUI
+import GenesicSwiftUI
+import ComposableArchitecture
 
 struct ChatView: View {
     var body: some View {
@@ -23,6 +25,7 @@ struct ChatView: View {
                         Image(systemName: "circle")
                     }
                 }
+                .padding(.horizontal)
                 
                 HStack {
                     Button {
@@ -50,13 +53,13 @@ struct ChatView: View {
                     }
                     .buttonStyle(.bordered)
                 }
+                .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
                 ScrollView(.vertical) {
                     ForEach(0..<100, id: \.self) { _ in
                         HStack {
-                            AsyncImage(url: nil)
-                                .size(60)
+                            UserCircleView(size: .medium, imageURL: nil)
                             
                             VStack(alignment: .leading) {
                                 HStack {
@@ -70,8 +73,8 @@ struct ChatView: View {
                         }
                     }
                 }
+                .contentMargins(10)
             }
-            .padding()
         }
     }
 }

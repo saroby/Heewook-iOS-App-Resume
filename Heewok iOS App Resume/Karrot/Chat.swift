@@ -1,10 +1,3 @@
-//
-//  Chat.swift
-//  Heewok iOS App Resume
-//
-//  Created by 신희욱 on 4/12/25.
-//
-
 import SwiftUI
 
 struct Chat: View {
