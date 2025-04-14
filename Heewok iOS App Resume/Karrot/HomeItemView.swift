@@ -8,6 +8,12 @@ struct HomeItem {
         let id: UUID
         var chatCount: Int = 0
         var likeCount: Int = 0
+        var thumbnailImageURL: URL? = "https://picsum.photos/200".url
+        var title: String = ""
+        var price: Double = 0
+        var townName: String = ""
+        var updatedAt: Date = .now
+        var isTraden = false
     }
     enum Action {
         case contentTapped
@@ -32,23 +38,39 @@ struct HomeItemView: View {
     
     var body: some View {
         HStack(spacing: 5) {
-            AsyncImage(url: "https://picsum.photos/200".url)
+            AsyncImage(url: store.thumbnailImageURL)
                 .size(90)
                 .clipShape(RoundedRectangle(cornerRadius: 5))
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text("snsnsn")
+                    Text(store.title)
                     Spacer()
                     Image(systemName: "circle")
                 }
-                HStack {
-                    Text("500M.소소동.24분전")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                HStack(spacing: 3) {
+                    Text("500M")
+                    Text("·")
+                    Text(store.updatedAt, style: .relative)
                 }
-                Text("소소")
-                    .fontWeight(.bold)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+                HStack {
+                    if store.isTraden {
+                        Text(store.price == .zero ? "나눔완료" : "거래완료")
+                            .font(.caption2)
+                            .padding(3)
+                            .foregroundStyle(Color.white)
+                            .fontWeight(.semibold)
+                            .background(.tint)
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                    }
+                    Text(store.price == .zero ? "나눔🧡" : store.price.description)
+                        .fontWeight(.bold)
+
+                }
+                
                 HStack(spacing: 5) {
                     Spacer()
                     HStack(spacing: 3) {

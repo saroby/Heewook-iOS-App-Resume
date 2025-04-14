@@ -5,6 +5,7 @@ import ComposableArchitecture
 struct Home {
     @ObservableState
     struct State: Equatable {
+        var hasNotificaiton: Bool = false
         var items: IdentifiedArrayOf<HomeItem.State> = []
     }
     enum Action {
@@ -46,6 +47,13 @@ struct HomeView: View {
                 Image(systemName: "line.3.horizontal")
                 Image(systemName: "magnifyingglass")
                 Image(systemName: "bell")
+                    .overlay(alignment: .topTrailing) {
+                        if store.hasNotificaiton {
+                            Circle()
+                                .fill(.red)
+                                .frame(size: 6)
+                        }
+                    }
             }
             .padding()
             
